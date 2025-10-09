@@ -1,0 +1,80 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  /* flex-direction: column;
+  align-items: stretch; */
+  background-color: #6b5d5d3a;
+  gap: 1rem;
+}
+
+main .header {
+  height: 70px;
+  width: 1450px;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  flex-basis: 100%;
+  border-radius: 0.7rem;
+  background-color: #f0f0f0;
+}
+
+main .left,
+main .right {
+  height: 100%;
+  /* width: 100%; */
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+  position: relative;
+}
+
+main .left {
+  background-color: #000000;
+  /* position: relative; */
+}
+
+.left .code,
+.code pre,
+.code pre code {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background-color: #edecec;
+}
+
+main .left .review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgb(199, 199, 201);
+  color: #000000;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  /* user-select: none; */
+  border-radius: 0.7rem;
+}
+
+
+main .right {
+  background-color: #edecec;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  overflow: auto;
+}
